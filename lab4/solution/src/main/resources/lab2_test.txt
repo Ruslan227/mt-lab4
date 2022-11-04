@@ -1,0 +1,17 @@
+static void test(String expected, String actual) {
+    assert expected.equals(actual);
+}
+
+static String getParsedValue(Parser p, String input) {
+    return p.parse(input).res;
+}
+
+static void tests() {
+    var p = new Parser();
+
+    test("a", getParsedValue(p, "a $"));
+    test("(a and b)", getParsedValue(p, "a and b $"));
+    test("(a not in c)", getParsedValue(p, "a not in c $"));
+    test("(((a in b)) or ((c not in b)))", getParsedValue(p,"( a in b ) or ( c not in b ) $"));
+    test("((a and ((b or d))))", getParsedValue(p,"( a and ( b or d ) ) $"));
+}

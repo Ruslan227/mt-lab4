@@ -1,0 +1,41 @@
+class(rightPartConstructor, switchRightPart) ::= <<
+import control.table.GrammarDataI;
+
+import java.util.List;
+import java.util.Map;
+import java.util.function.Function;
+
+import static java.util.Map.entry;
+
+public class GrammarData implements GrammarDataI {
+    <rightPartConstructor>
+
+    <switchRightPart>
+
+    @Override
+    public Map\<String, Function\<Map\<String, List\<Object\>\>, Object\>\> getRightPartConstructor() {
+        return rightPartConstructor;
+    }
+
+}
+>>
+
+rightPartConstructor() ::= <<public final Map\<String, Function\<Map\<String, List\<Object\>\>, Object\>\> rightPartConstructor = Map.ofEntries(
+>>
+
+switchRightPart(cases) ::= <<
+@Override
+public Object reduceFromRightPart(Object rp) {
+        switch (rp.getClass().getName()) {
+            <cases>
+            default:
+                return null;
+        }
+}
+>>
+
+case(nonTerminal, rightPartClassName) ::= <<
+case "<rightPartClassName>":
+    return new <nonTerminal>((<rightPartClassName>) rp);
+
+>>

@@ -1,0 +1,26 @@
+E0(int v)
+E(int v, int buf1, int buf2)
+T(int v, int buf1, int buf2)
+F(int v, String buf)
+F1(String v, String buf)
+
+E0 { v = E[0].v; } -> E
+E { v = T[0].v; } -> T
+E { buf1 = E[0].v; buf2 = T[0].v; ±v = buf1 + buf2±; } -> E ±+± T
+E { buf1 = E[0].v; buf2 = T[0].v; ±v = buf1 - buf2±; } -> E ±-± T
+T { v = F[0].v; } -> F
+T { buf1 = T[0].v; buf2 = F[0].v; ±v = buf1 * buf2±; } -> T ±*± F
+F { v = E[0].v; } -> ±(± E ±)±
+F { buf = F1[0].v; ±v = Integer.parseInt(buf)±; } -> F1
+F1 { buf = F1[0].v; ±v = "0" + buf±; } -> ±0± F1
+F1 { buf = F1[0].v; ±v = "1" + buf±; } -> ±1± F1
+F1 { buf = F1[0].v; ±v = "2" + buf±; } -> ±2± F1
+F1 { buf = F1[0].v; ±v = "3" + buf±; } -> ±3± F1
+F1 { buf = F1[0].v; ±v = "4" + buf±; } -> ±4± F1
+F1 { buf = F1[0].v; ±v = "5" + buf±; } -> ±5± F1
+F1 { buf = F1[0].v; ±v = "6" + buf±; } -> ±6± F1
+F1 { buf = F1[0].v; ±v = "7" + buf±; } -> ±7± F1
+F1 { buf = F1[0].v; ±v = "8" + buf±; } -> ±8± F1
+F1 { buf = F1[0].v; ±v = "9" + buf±; } -> ±9± F1
+F1 { ±v = ""±; } -> eps
+

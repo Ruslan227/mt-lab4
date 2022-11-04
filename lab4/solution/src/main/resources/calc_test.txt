@@ -1,0 +1,21 @@
+2 3 $ | 23
+( 2 + 2 ) * 2 $ | 8
+2 + 2 * 2 $ | 6
+
+static void test(int expected, int actual) {
+        assert expected == actual;
+    }
+
+static int getParsedValue(Parser p, String input) {
+    return p.parse(input).v;
+}
+
+static void tests() {
+    var p = new Parser();
+
+    test(2, getParsedValue(p, "2 $"));
+    test(22, getParsedValue(p, "2 2 $"));
+    test(6, getParsedValue(p, "2 + 2 * 2 $"));
+    test(8, getParsedValue(p,"( 2 + 2 ) * 2 $"));
+    test(160, getParsedValue(p,"( 8 9 - 9 ) * ( 5 - 4 + 1 ) $"));
+}

@@ -1,0 +1,13 @@
+constructorLine(objectName, nonTerminal, id) ::= "this.<objectName> = (<nonTerminal>) m.get(\"<nonTerminal>\").get(<id>);"
+constructor(className, pureCode) ::= <<
+public <className>(Map\<String, List\<Object\>\> m) {<pureCode>
+}
+>>
+class(className, fields, constructor) ::= <<
+import java.util.*;
+
+public class <className> {
+    <fields>
+    <constructor>
+}
+>>

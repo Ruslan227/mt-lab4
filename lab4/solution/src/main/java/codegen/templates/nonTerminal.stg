@@ -1,0 +1,7 @@
+oneField(typeAndVarName) ::= <<    public <typeAndVarName>;
+>>
+classDeclaration(className) ::= <<public class <className> {
+
+>>
+constructorDeclaration(className, rightPartClassName) ::= <<    public <className>(<rightPartClassName> rightPart) {
+>>

@@ -1,0 +1,6 @@
+S(String s1, String s2, String buf)
+
+S { buf = S[0].s1; ±s1 = "(" + buf ±; buf = S[0].s2; ±s1 += buf + ")"±; buf = S[1].s1; ±s2 = "(" + buf ±; buf = S[1].s2; ±s2 += buf + ")"±; } -> ±(± S ±)± ±(± S ±)±
+S { buf = S[0].s1; ±s1 = "(" + buf ±; buf = S[0].s2; ±s1 += buf + ")"±; ±s2 = ""±; } -> ±(± S ±)±
+S {±s1 = ""±; ±s2 = ""±;} -> eps
+
