@@ -1,4 +1,5 @@
-package antrl;// Generated from /Users/ruslan/MY_GIT_HUB/REPA/sem-5/translationMethods/experiments/src/Input.g4 by ANTLR 4.9.2
+// Generated from Input.g4 by ANTLR 4.9.2
+package antrl;
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
 /**

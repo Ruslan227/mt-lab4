@@ -1,4 +1,5 @@
-package antrl;// Generated from /Users/ruslan/MY_GIT_HUB/REPA/sem-5/translationMethods/experiments/src/Input.g4 by ANTLR 4.9.2
+// Generated from Input.g4 by ANTLR 4.9.2
+package antrl;
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -18,8 +19,7 @@ public class InputParser extends Parser {
 	public static final int
 		EQ=1, END_COMMAND=2, CODE_OPEN=3, CODE_CLOSE=4, OPEN=5, CLOSE=6, TYPE=7, 
 		ARGUMENT_DELIMITER=8, EPS=9, NEW_LINE=10, NON_TERMINAL_FIELD=11, VAR_NAME=12, 
-		NON_TERMINAL=13, ARROW=14, DOUBLE=15, INT=16, STRING=17, OPERATION=18, 
-		UPPER_CASE_LETTERS=19, WS=20, TERMINAL=21;
+		NON_TERMINAL=13, ARROW=14, UPPER_CASE_LETTERS=15, WS=16, TERMINAL=17;
 	public static final int
 		RULE_initStart = 0, RULE_constructors = 1, RULE_className = 2, RULE_arguments = 3, 
 		RULE_argument = 4, RULE_rules = 5, RULE_targetRule = 6, RULE_rightPart = 7, 
@@ -43,8 +43,7 @@ public class InputParser extends Parser {
 		return new String[] {
 			null, "EQ", "END_COMMAND", "CODE_OPEN", "CODE_CLOSE", "OPEN", "CLOSE", 
 			"TYPE", "ARGUMENT_DELIMITER", "EPS", "NEW_LINE", "NON_TERMINAL_FIELD", 
-			"VAR_NAME", "NON_TERMINAL", "ARROW", "DOUBLE", "INT", "STRING", "OPERATION", 
-			"UPPER_CASE_LETTERS", "WS", "TERMINAL"
+			"VAR_NAME", "NON_TERMINAL", "ARROW", "UPPER_CASE_LETTERS", "WS", "TERMINAL"
 		};
 	}
 	private static final String[] _SYMBOLIC_NAMES = makeSymbolicNames();
@@ -848,7 +847,7 @@ public class InputParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\27g\4\2\t\2\4\3\t"+
+		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\23g\4\2\t\2\4\3\t"+
 		"\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t\13\4"+
 		"\f\t\f\4\r\t\r\3\2\3\2\3\2\3\2\3\2\3\3\3\3\3\3\3\3\3\3\5\3%\n\3\3\4\3"+
 		"\4\3\4\3\4\3\4\3\5\3\5\3\5\3\5\3\5\3\5\5\5\62\n\5\3\6\3\6\3\6\3\7\3\7"+
@@ -866,12 +865,12 @@ public class InputParser extends Parser {
 		"\2\2\66\67\5\16\b\2\678\7\f\2\289\5\f\7\29<\3\2\2\2:<\3\2\2\2;\66\3\2"+
 		"\2\2;:\3\2\2\2<\r\3\2\2\2=>\7\17\2\2>?\5\22\n\2?@\7\20\2\2@A\5\20\t\2"+
 		"AF\3\2\2\2BC\7\17\2\2CD\7\20\2\2DF\5\20\t\2E=\3\2\2\2EB\3\2\2\2F\17\3"+
-		"\2\2\2GH\7\17\2\2HO\5\20\t\2IJ\7\27\2\2JO\5\20\t\2KO\7\17\2\2LO\7\27\2"+
+		"\2\2\2GH\7\17\2\2HO\5\20\t\2IJ\7\23\2\2JO\5\20\t\2KO\7\17\2\2LO\7\23\2"+
 		"\2MO\7\13\2\2NG\3\2\2\2NI\3\2\2\2NK\3\2\2\2NL\3\2\2\2NM\3\2\2\2O\21\3"+
 		"\2\2\2PQ\7\5\2\2QR\5\24\13\2RS\7\6\2\2S\23\3\2\2\2TU\5\26\f\2UV\5\24\13"+
 		"\2V]\3\2\2\2WX\5\30\r\2XY\5\24\13\2Y]\3\2\2\2Z]\5\26\f\2[]\5\30\r\2\\"+
 		"T\3\2\2\2\\W\3\2\2\2\\Z\3\2\2\2\\[\3\2\2\2]\25\3\2\2\2^_\7\16\2\2_`\7"+
-		"\3\2\2`a\t\2\2\2ab\7\4\2\2b\27\3\2\2\2cd\7\27\2\2de\7\4\2\2e\31\3\2\2"+
+		"\3\2\2`a\t\2\2\2ab\7\4\2\2b\27\3\2\2\2cd\7\23\2\2de\7\4\2\2e\31\3\2\2"+
 		"\2\b$\61;EN\\";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
