@@ -23,7 +23,7 @@ public class GrammarParser {
             Files.createDirectories(outputPath);
         }
 
-        Path inputPath = Paths.get("src", "main", "resources", "lab2.txt");
+        Path inputPath = Paths.get("src", "main", "resources", "test1.txt");
         List<String> lines = Files.readAllLines(inputPath, StandardCharsets.UTF_8);
         String input = String.join("\n", lines);
         InputLexer inputLexer = new InputLexer(CharStreams.fromString(input));
