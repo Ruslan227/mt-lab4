@@ -12,7 +12,6 @@ public class InputChecker { // TODO: проверка синтезируемых
         checkNonTerminalsInRightPartToHaveRules();
     }
 
-
     private void checkNonTerminalsInRightPartToHaveRules() {
         var nonTerminalsInRightPart = listener.getNonTerminalsInRightPart();
         var nonTerminals = listener.getNonTerminals();
@@ -23,8 +22,4 @@ public class InputChecker { // TODO: проверка синтезируемых
             }
         });
     }
-
-
-
-
 }

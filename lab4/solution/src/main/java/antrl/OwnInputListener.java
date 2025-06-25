@@ -53,7 +53,6 @@ public class OwnInputListener extends InputBaseListener {
         super.enterInitStart(ctx);
     }
 
-
     @Override
     public void exitInitStart(InputParser.InitStartContext ctx) {
         for (var nonTerminal : utilsData.getNonTerminals()) {

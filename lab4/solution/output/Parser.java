@@ -34,8 +34,8 @@ public class Parser {
 
     public static void main(String[] args) {
         var p = new Parser();
-//        S s = p.parse("( ( ) ) $");
-//        System.out.println(1);
+        S s = p.parse("( ( ) ) $");
+        System.out.println(1);
     }
 
 }

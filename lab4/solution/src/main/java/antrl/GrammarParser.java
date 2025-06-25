@@ -33,8 +33,6 @@ public class GrammarParser {
         ParseTreeWalker walker = new ParseTreeWalker();
         OwnInputListener listener = new OwnInputListener();
         walker.walk(listener, tree);
-
-
     }
 }
 
